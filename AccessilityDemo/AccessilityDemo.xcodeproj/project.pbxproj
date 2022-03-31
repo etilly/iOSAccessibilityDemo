@@ -27,6 +27,7 @@
 		E9E0DDEE27E39350003A45DE /* Diseases.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9E0DDEB27E39350003A45DE /* Diseases.xcdatamodeld */; };
 		E9E0DDF027E39775003A45DE /* DiseaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E0DDEF27E39775003A45DE /* DiseaseError.swift */; };
 		E9E0DDF127E39775003A45DE /* DiseaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E0DDEF27E39775003A45DE /* DiseaseError.swift */; };
+		E9E527EF27E4FE8000F21EC5 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = E9E527EE27E4FE8000F21EC5 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E527EF27E4FE8000F21EC5 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +227,9 @@
 			dependencies = (
 			);
 			name = "AccessilityDemo (iOS)";
+			packageProductDependencies = (
+				E9E527EE27E4FE8000F21EC5 /* Algorithms */,
+			);
 			productName = "AccessilityDemo (iOS)";
 			productReference = E94C13E227DD22FF002BD9DE /* AccessilityDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -317,6 +322,9 @@
 				Base,
 			);
 			mainGroup = E94C13D527DD22FE002BD9DE;
+			packageReferences = (
+				E9E527ED27E4FE8000F21EC5 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = E94C13E327DD22FF002BD9DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -781,6 +789,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9E527ED27E4FE8000F21EC5 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9E527EE27E4FE8000F21EC5 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9E527ED27E4FE8000F21EC5 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E9E0DDEB27E39350003A45DE /* Diseases.xcdatamodeld */ = {

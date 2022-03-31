@@ -13,17 +13,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach($viewModel.diseases) { $disease in
+                ForEach(viewModel.diseasesFiltered) { disease in
                     Text(disease.name)
                 }
             }
-//            List($viewModel.diseases) { $disease in
-//                Text(disease.name)
-//            }
-//            List {
-//                Text("test !")
-//                Text("test !!")
-//            }
             .listStyle(.sidebar)
             .searchable(text: $viewModel.searchText)
             .navigationTitle("AccessibilityDemo")
